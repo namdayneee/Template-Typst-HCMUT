@@ -11,7 +11,7 @@
   align(center)[
     #text(weight: "bold", size: 10pt)[
       VIETNAM NATIONAL UNIVERSITY HO CHI MINH CITY \
-      UNIVERSITY OF TECHNOLOGY \
+      HO CHI MINH CITY UNIVERSITY OF TECHNOLOGY \
       FACULTY OF COMPUTER SCIENCE AND ENGINEERING
     ]
   ]
@@ -28,7 +28,7 @@
   // Course title with horizontal lines
   align(center)[
     #block[
-      #align(left)[
+      #align(center)[
         #text(weight: "bold", size: 14pt)[#course_code]
       ]
       #v(0.3em)
@@ -72,7 +72,7 @@
   // ===== THIẾT LẬP CHO CÁC TRANG NỘI DUNG =====
   set page(
     paper: "a4",
-    margin: (x: 2cm, top: 2.5cm, bottom: 2cm),
+    margin: (x: 2cm, top: 3cm, bottom: 2.5cm),
     header: {
       grid(
         columns: (auto, 1fr),
@@ -100,8 +100,8 @@
       grid(
         columns: (1fr, auto),
         align: (left, right),
-        [#text(size: 8pt)[Assignment for Discrete Structures for Computing - Academic year #academic_year]],
-        context [#text(size: 8pt)[Page #counter(page).display() / #counter(page).final().first()]]
+        [#text(size: 9pt)[Assignment for Discrete Structures for Computing - Academic year #academic_year]],
+        context [#text(size: 9pt)[Page #counter(page).display() / #counter(page).final().first()]]
       )
     },
     header-ascent: 30%,
@@ -129,6 +129,10 @@
   }
   
   // Mục lục
+  align(left)[
+    #text(size: 18pt, weight: "bold")[Mục lục]
+  ]
+  v(1em)
   outline(
     title: none,
     indent: 2em
